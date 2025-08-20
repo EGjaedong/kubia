@@ -1,0 +1,102 @@
+lib-cov
+*.seed
+*.log
+*.dat
+*.out
+*.pid
+*.gz
+*.swp
+
+pids
+logs
+results
+tmp
+
+.prettier*
+!portal/.prettier*
+!portalBackend/.prettier*
+
+package-lock.json
+!portal/package-lock.json
+!portalBackend/package-lock.json
+
+# Coverage reports
+coverage
+
+# API keys and secrets
+.env
+.env.bak
+
+# Dependency directory
+node_modules
+bower_components
+
+# Editors
+.idea
+*.iml
+.vscode
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Ignore built ts files
+dist/**/*
+
+# ignore yarn.lock
+yarn.lock
+
+# PNPM
+.pnpm-store
+
+# helm
+charts/
+Chart.lock
+
+# VScode
+.history/
+
+# Ignore local docker compose override
+compose.override.yml
+!docker_compose/.env
+
+it/run_all_ctk.js
+
+busted_tested_files
+# Petal IT
+it/docker-compose.petal.yaml
+it/init_database.sh
+it/nginx.conf
+env/local/values.yaml
+
+.temp_cache/
+test-results
+
+# Dynamically generated to support multi-service startup
+apps/ts-polaris/src/app.module.ts
+apps/ts-polaris/src/main.ts
+apps/ts-polaris/resources/**/*
+env/local/install-package.nu
+/env/local/install-package.nu
+env/local/values.yaml
+env/local/install-package.nu
+env/local/setup/alarm/prometheus_rules/*.yml
+env/local/setup/lua/config_custom.lua
+services_root/services/config_base.lua
+services_root/services/secrets.lua
+env/local/values.yaml
+env/local/install-package.nu
+env/local/setup/alarm/prometheus_rules/*.yml
+env/local/template/remote*
+it/errorlogs
+it/rhino_all-error-info.json
+*.log.txt
+
+private.pem
+public.pem
+
+consentHub/dtmace/public/
+consentHub/lotusflaretelecom/public/
+consentHub/common/dist/
+
+**/.vitepress/cache

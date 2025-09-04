@@ -27,7 +27,7 @@ jobs:
         run: echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
       - name: Build Docker image
         run: |
-          docker build -t ${{ secrets.REGISTRY_URL }}/cicd-dev/cicd-image-repo:${{ steps.sha.outputs.sha_short }} .
+          docker build -t ${{ secrets.REGISTRY_URL }}/kubernetes-demo-eric/github-actions-argocd-helm-demo:${{ steps.sha.outputs.sha_short }} .
       - name: Push Docker image
         run: |
-          docker push ${{ secrets.REGISTRY_URL }}/cicd-dev/cicd-image-repo:${{ steps.sha.outputs.sha_short }}
+          docker push ${{ secrets.REGISTRY_URL }}/kubernetes-demo-eric/github-actions-argocd-helm-demo:${{ steps.sha.outputs.sha_short }}
